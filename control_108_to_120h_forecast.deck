@@ -1,0 +1,124 @@
+#!/bin/tcsh
+
+date
+set echo
+
+set thresh1 = 10mm
+set thresh2 = POP
+set hour = 120
+#set date_list= ( 2016040100 2016040200 2016040300 2016040400 2016040500 \
+#                2016040600 2016040700 2016040800 2016040900 2016041000 \
+#                2016041100 2016041200 2016041300 2016041400 2016041500 \
+#                2016041600 2016041700 2016041800 2016041900 2016042000 \
+#                2016042100 2016042200 2016042300 2016042400 2016042500 \
+#                2016042600 2016042700 2016042800 2016042900 2016043000 \
+#                2016050100 2016050200 2016050300 2016050400 2016050500 \
+#                2016050600 2016050700 2016050800 2016050900 2016051000 \
+#                2016051100 2016051200 2016051300 2016051400 2016051500 \
+#                2016051600 2016051700 2016051800 2016051900 2016052000 \
+#                2016052100 2016052200 2016052300 2016052400 2016052500 \
+#                2016052600 2016052700 2016052800 2016052900 2016053000 2016053100 \
+#                2016060100 2016060200 2016060300 2016060400 2016060500 \
+#                2016060600 2016060700 2016060800 2016060900 2016061000 \
+#                2016061100 2016061200 2016061300 2016061400 2016061500 \
+#                2016061600 2016061700 2016061800 2016061900 2016062000 \
+#                2016062100 2016062200 2016062300 2016062400 2016062500 \
+#                2016062600 2016062700 2016062800 2016062900 2016063000 )
+                
+
+#foreach ftype (ENC E C N EC EN NC)
+foreach ftype (ENC)
+    foreach date (2016040100 2016040200 2016040300 2016040400 2016040500)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end 
+    foreach date (2016040600 2016040700 2016040800 2016040900 2016041000)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end  
+    foreach date (2016041100 2016041200 2016041300 2016041400 2016041500)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end  
+    foreach date (2016041600 2016041700 2016041800 2016041900 2016042000)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016042100 2016042200 2016042300 2016042400 2016042500)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016042600 2016042700 2016042800 2016042900 2016043000)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016050100 2016050200 2016050300 2016050400 2016050500)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016050600 2016050700 2016050800 2016050900 2016051000)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016051100 2016051200 2016051300 2016051400 2016051500)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016051600 2016051700 2016051800 2016051900 2016052000)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016052100 2016052200 2016052300 2016052400 2016052500)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016052600 2016052700 2016052800 2016052900 2016053000 2016053100)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016060100 2016060200 2016060300 2016060400 2016060500)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016060600 2016060700 2016060800 2016060900 2016061000)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end    
+    foreach date (2016061100 2016061200 2016061300 2016061400 2016061500)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end  
+    foreach date (2016061600 2016061700 2016061800 2016061900 2016062000)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016062100 2016062200 2016062300 2016062400 2016062500)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    foreach date (2016062600 2016062700 2016062800 2016062900 2016063000)
+        date
+        blend_precip_local.x $date $hour $ftype $thresh1
+        #blend_precip_local.x $date $hour $ftype $thresh2
+    end
+    
+end
+
+set noecho

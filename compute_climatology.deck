@@ -1,0 +1,13 @@
+#!/bin/tcsh
+python compute_climatology_ppn.py Jan
+python compute_climatology_ppn.py Feb
+python compute_climatology_ppn.py Mar
+python compute_climatology_ppn.py Apr
+python compute_climatology_ppn.py May
+python compute_climatology_ppn.py Jun
+python compute_climatology_ppn.py Jul
+python compute_climatology_ppn.py Aug
+python compute_climatology_ppn.py Sep
+python compute_climatology_ppn.py Oct
+python compute_climatology_ppn.py Nov
+python compute_climatology_ppn.py Dec

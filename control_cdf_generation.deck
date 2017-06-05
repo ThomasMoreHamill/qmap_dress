@@ -1,0 +1,133 @@
+#!/bin/tcsh
+
+python compute_precip_CCPAgrid_cdfs.py ECMWF 24 2016033000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 24 2016041000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 24 2016042000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 24 2016043000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 24 2016051000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 24 2016052000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 24 2016053000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 24 2016061000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 24 2016062000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 24 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py NCEP 24 2016033000
+python compute_precip_CCPAgrid_cdfs.py NCEP 24 2016041000
+python compute_precip_CCPAgrid_cdfs.py NCEP 24 2016042000
+python compute_precip_CCPAgrid_cdfs.py NCEP 24 2016043000
+python compute_precip_CCPAgrid_cdfs.py NCEP 24 2016051000
+python compute_precip_CCPAgrid_cdfs.py NCEP 24 2016052000
+python compute_precip_CCPAgrid_cdfs.py NCEP 24 2016053000
+python compute_precip_CCPAgrid_cdfs.py NCEP 24 2016061000
+python compute_precip_CCPAgrid_cdfs.py NCEP 24 2016062000
+python compute_precip_CCPAgrid_cdfs.py NCEP 24 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py CMC 24 2016033000
+python compute_precip_CCPAgrid_cdfs.py CMC 24 2016041000
+python compute_precip_CCPAgrid_cdfs.py CMC 24 2016042000
+python compute_precip_CCPAgrid_cdfs.py CMC 24 2016043000
+python compute_precip_CCPAgrid_cdfs.py CMC 24 2016051000
+python compute_precip_CCPAgrid_cdfs.py CMC 24 2016052000
+python compute_precip_CCPAgrid_cdfs.py CMC 24 2016053000
+python compute_precip_CCPAgrid_cdfs.py CMC 24 2016061000
+python compute_precip_CCPAgrid_cdfs.py CMC 24 2016062000
+python compute_precip_CCPAgrid_cdfs.py CMC 24 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py ECMWF 72 2016033000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 72 2016041000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 72 2016042000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 72 2016043000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 72 2016051000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 72 2016052000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 72 2016053000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 72 2016061000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 72 2016062000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 72 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py NCEP 72 2016033000
+python compute_precip_CCPAgrid_cdfs.py NCEP 72 2016041000
+python compute_precip_CCPAgrid_cdfs.py NCEP 72 2016042000
+python compute_precip_CCPAgrid_cdfs.py NCEP 72 2016043000
+python compute_precip_CCPAgrid_cdfs.py NCEP 72 2016051000
+python compute_precip_CCPAgrid_cdfs.py NCEP 72 2016052000
+python compute_precip_CCPAgrid_cdfs.py NCEP 72 2016053000
+python compute_precip_CCPAgrid_cdfs.py NCEP 72 2016061000
+python compute_precip_CCPAgrid_cdfs.py NCEP 72 2016062000
+python compute_precip_CCPAgrid_cdfs.py NCEP 72 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py CMC 72 2016033000
+python compute_precip_CCPAgrid_cdfs.py CMC 72 2016041000
+python compute_precip_CCPAgrid_cdfs.py CMC 72 2016042000
+python compute_precip_CCPAgrid_cdfs.py CMC 72 2016043000
+python compute_precip_CCPAgrid_cdfs.py CMC 72 2016051000
+python compute_precip_CCPAgrid_cdfs.py CMC 72 2016052000
+python compute_precip_CCPAgrid_cdfs.py CMC 72 2016053000
+python compute_precip_CCPAgrid_cdfs.py CMC 72 2016061000
+python compute_precip_CCPAgrid_cdfs.py CMC 72 2016062000
+python compute_precip_CCPAgrid_cdfs.py CMC 72 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py ECMWF 120 2016033000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 120 2016041000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 120 2016042000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 120 2016043000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 120 2016051000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 120 2016052000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 120 2016053000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 120 2016061000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 120 2016062000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 120 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py NCEP 120 2016033000
+python compute_precip_CCPAgrid_cdfs.py NCEP 120 2016041000
+python compute_precip_CCPAgrid_cdfs.py NCEP 120 2016042000
+python compute_precip_CCPAgrid_cdfs.py NCEP 120 2016043000
+python compute_precip_CCPAgrid_cdfs.py NCEP 120 2016051000
+python compute_precip_CCPAgrid_cdfs.py NCEP 120 2016052000
+python compute_precip_CCPAgrid_cdfs.py NCEP 120 2016053000
+python compute_precip_CCPAgrid_cdfs.py NCEP 120 2016061000
+python compute_precip_CCPAgrid_cdfs.py NCEP 120 2016062000
+python compute_precip_CCPAgrid_cdfs.py NCEP 120 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py CMC 120 2016033000
+python compute_precip_CCPAgrid_cdfs.py CMC 120 2016041000
+python compute_precip_CCPAgrid_cdfs.py CMC 120 2016042000
+python compute_precip_CCPAgrid_cdfs.py CMC 120 2016043000
+python compute_precip_CCPAgrid_cdfs.py CMC 120 2016051000
+python compute_precip_CCPAgrid_cdfs.py CMC 120 2016052000
+python compute_precip_CCPAgrid_cdfs.py CMC 120 2016053000
+python compute_precip_CCPAgrid_cdfs.py CMC 120 2016061000
+python compute_precip_CCPAgrid_cdfs.py CMC 120 2016062000
+python compute_precip_CCPAgrid_cdfs.py CMC 120 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py ECMWF 168 2016033000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 168 2016041000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 168 2016042000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 168 2016043000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 168 2016051000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 168 2016052000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 168 2016053000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 168 2016061000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 168 2016062000
+python compute_precip_CCPAgrid_cdfs.py ECMWF 168 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py NCEP 168 2016033000
+python compute_precip_CCPAgrid_cdfs.py NCEP 168 2016041000
+python compute_precip_CCPAgrid_cdfs.py NCEP 168 2016042000
+python compute_precip_CCPAgrid_cdfs.py NCEP 168 2016043000
+python compute_precip_CCPAgrid_cdfs.py NCEP 168 2016051000
+python compute_precip_CCPAgrid_cdfs.py NCEP 168 2016052000
+python compute_precip_CCPAgrid_cdfs.py NCEP 168 2016053000
+python compute_precip_CCPAgrid_cdfs.py NCEP 168 2016061000
+python compute_precip_CCPAgrid_cdfs.py NCEP 168 2016062000
+python compute_precip_CCPAgrid_cdfs.py NCEP 168 2016063000
+
+python compute_precip_CCPAgrid_cdfs.py CMC 168 2016033000
+python compute_precip_CCPAgrid_cdfs.py CMC 168 2016041000
+python compute_precip_CCPAgrid_cdfs.py CMC 168 2016042000
+python compute_precip_CCPAgrid_cdfs.py CMC 168 2016043000
+python compute_precip_CCPAgrid_cdfs.py CMC 168 2016051000
+python compute_precip_CCPAgrid_cdfs.py CMC 168 2016052000
+python compute_precip_CCPAgrid_cdfs.py CMC 168 2016053000
+python compute_precip_CCPAgrid_cdfs.py CMC 168 2016061000
+python compute_precip_CCPAgrid_cdfs.py CMC 168 2016062000
+python compute_precip_CCPAgrid_cdfs.py CMC 168 2016063000

@@ -1,0 +1,54 @@
+#!/bin/tcsh
+
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 12
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 12
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 12
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 24
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 24
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 24
+
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 60
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 60
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 60
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 72
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 72
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 72
+
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 108
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 120
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 108
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 120
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 108
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 120
+
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 156
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 168
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 156
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 168
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 156
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 168
+
+#
+
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 36
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 48
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 84
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 96
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 132
+python precip_forecast_ccpa_2netcdf_makeup.py ECMWF 144
+
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 36
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 48
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 84
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 96
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 132
+python precip_forecast_ccpa_2netcdf_makeup.py NCEP 144
+
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 36
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 48
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 84
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 96
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 132
+python precip_forecast_ccpa_2netcdf_makeup.py CMC 144
+
+
