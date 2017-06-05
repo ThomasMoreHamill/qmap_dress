@@ -206,7 +206,7 @@ ALLOCATE (cmc_ensemble_ccpa_x9(9,nxa,nya,nens_cmc))
 
 write(6,*) 'Calling read_precip_climatology_local'
 pclimo_infile = &
-    '/Users/thamill/precip/ecmwf_data/apcp_climatologies_12_to_00UTC_'//&
+    '/data/thamill/Rf2_tests/ccpa_v1/0.125d/apcp_climatologies_12_to_00UTC_'//&
     cmonths(imonth)//'.nc'
 CALL read_precip_climatology_local(nxa, nya, pclimo_infile, cthresh, climo_prob, &
     rlonsa, rlatsa, conusmask)
@@ -258,7 +258,7 @@ PRINT *,'maxval(ecmwf_ensemble_ccpa) in driver = ',&
 
 ! ---- read the precipitation analysis valid for this lead time.
 
-infile = '/Users/thamill/precip/ecmwf_data/'//&
+infile = '/data/thamill/Rf2_tests/ccpa_v1/'//&
 	'precip_ccpav1_2002010200_to_2016123100.nc'
 CALL read_precipitation_analysis(nxa, nya, jyyyymmddhh,&
 	infile, analysis, istat)

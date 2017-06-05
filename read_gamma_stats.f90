@@ -1,19 +1,20 @@
-! f2py -c -m 
-SUBROUTINE read_gamma_stats(nine, nxa, nya, nmembers, n_climocats, nthreshes, &
-	infile, gamma_sum, gamma_ln_sum, gamma_sum_low, gamma_ln_sum_low, &
-	gamma_sum_mod, gamma_ln_sum_mod, closest_histogram, closest_histogram_low, &
+! f2py -c -m read_gamma_stats read_gamma_stats.f90
+
+SUBROUTINE read_gamma_stats(nmembers, n_climocats, &
+    nthreshes, infile, gamma_sum, gamma_ln_sum, gamma_sum_low, &
+    gamma_ln_sum_low, gamma_sum_mod, gamma_ln_sum_mod, gamma_sum_high, &
+    gamma_ln_sum_high, closest_histogram, closest_histogram_low, &
 	closest_histogram_mod, closest_histogram_high, nzeros, nzeros_low, &
 	nzeros_mod, nzeros_high, npositive, npositive_low, npositive_mod, &
 	npositive_high, nzeros_fclim, npositive_fclim, fraction_zero_fclim, & 	
 	istat)
 
-INTEGER, INTENT(IN) :: nine, nxa, nya, nmembers
+INTEGER, INTENT(IN) :: nmembers
 INTEGER, INTENT(IN) :: n_climocats ! thresholds for prob zero precip climo
 INTEGER, INTENT(IN) :: nthreshes ! discretization of precip amt
+CHARACTER*(*) :: infile
 
-
-
-REAL, INTENT(OUT), :: istat
+REAL, INTENT(OUT) :: istat
 
 REAL*8, INTENT(OUT), DIMENSION(nthreshes+1) :: gamma_sum, gamma_ln_sum
 REAL*8, INTENT(OUT), DIMENSION(nthreshes+1) :: gamma_sum_low, gamma_ln_sum_low
@@ -105,6 +106,8 @@ IF (exist) THEN
 	CLOSE (15)
 	PRINT *,'Done reading'
 	
+ELSE
+    istat = -1
 ENDIF
 				
 RETURN
