@@ -1,0 +1,93 @@
+SHELL = /bin/sh
+
+# ====================================================================== 
+# Source and Object File Lists
+# ====================================================================== 
+
+SRCS = blend_precip_downscale_gammadress.f90 barnes_like.f90 cdf_correct.f90 \
+       check.f90 compute_prob_climatology.f90 control_cdf_biascorrection.f90 \
+       make_tiny_negatives_zero.f90 raw_ensemble_probs.f90 \
+       grand_ensemble_mean.f90 \
+       raw_vs_smoothed_weight.f90 read_cdfs.f90 read_forecasts.f90 \
+       read_forecasts_ccpa.f90 read_forecasts_tdlp_vect.f90 \
+       read_forecasts_tdlp.f90 read_iccpa_list.f90 read_precip_analyses.f90 \
+       sgolay_2d_weights.f90 sgolay_smooth.f90 \
+       sort2_integer.f90 \
+       stat_downscale_and_smooth.f90 tdlp_get_grid.f90 \
+       tdlp_get_vect.f90 upscale_adjusted.f90 write_grib.f90 mpinv.f ran3.f updat.f \
+       doy.f gasdev.f ran1.f \
+       cdf_correct_x9.f90 \
+       control_cdf_biascorrection_x9.f90 \
+       raw_ensemble_probs_x9.f90 \
+       raw_vs_smoothed_weight_x9.f90 \
+       read_precip_analyses_x9.f90 \
+       sgolay_smooth_x9.f90 get_95_to_99.f90 read_cdf_netcdf.f90 \
+       cdf_correct_nonoise_x9.f90 ensemble_probs_x9_dressweight.f90 \
+       ensemble_probs_x9_weighted.f90 \
+       read_dressing_parameters_v2.f90 rejigger_weights.f90 \
+       read_closest_histogram.f90 control_quantile_mapping_x9.f90 \
+       sort.f random_gamma.f90 cumgam.f gratio.f erf.f erfc1.f gam1.f \
+       gamma.f rexp.f rlog.f spmpar.f ipmpar.f exparg.f
+
+OBJS = $(patsubst %.f90,%.o,$(filter %.f90,$(SRCS))) $(patsubst %.f,%.o,$(filter %.f,$(SRCS)))
+
+# ====================================================================== 
+# Tunable parameters
+#
+# FC            Name of the Fortran compiler
+# CC            Name of the C compiler
+# LDFLAGS       Flags to the loader
+# LIBS          List of libraries
+# CMD           Name of the executable
+# ====================================================================== 
+FC =            $(COMP)
+INCS =          -I. -I$(G2_INC4) $(NETCDF_INCLUDE) $(HDF4_INCLUDE) \
+                $(HDF5_INCLUDE)
+LIBS =          $(MDL_LIB4) $(W3NCO_LIB4) $(G2_LIB4) $(BACIO_LIB4) \
+                $(JASPER_LIB) $(PNG_LIB) $(Z_LIB) $(NETCDF_LDFLAGS_C) \
+                $(NETCDF_LDFLAGS_F) $(HDF4_LDFLAGS) $(HDF5_LDFLAGS) \
+                $(INTEL_OMP_LIB)
+CMD =           blend_precip_downscale_gammadress
+
+# ====================================================================== 
+# Compiler Options for Fortran, C and linking
+#
+# FFLAGS    Flags for the Fortran compiler
+# CFLAGS    Flags for the C compiler
+# LDFLAGS       Flags to the loader
+# ====================================================================== 
+#FFLAGS =        -O1 -integer-size 32 -real-size 32 -auto \
+#                -fpscomp logicals -fp-model strict -assume byterecl \
+#                -zero -assume buffered_io -align array64byte -g -traceback
+
+
+FFLAGS =        -O0 -integer-size 32 -real-size 32 -auto \
+                -fpscomp logicals -fp-model strict -assume byterecl \
+                -zero -assume buffered_io -align array64byte -g -traceback \
+		-check bounds -check uninit -check stack -debug minimal
+
+LDFLAGS =
+LDFLAGS =	
+
+# ====================================================================== 
+# Makefile rule tree. Lines from here on down should not need to be 
+# changed.
+# ====================================================================== 
+all:            $(CMD)
+
+oper:           $(CMD)
+
+$(CMD):         $(OBJS)
+	$(FC) $(LDFLAGS) -o $(@) $(OBJS) $(INCS) -Wl,--start-group $(LIBS) -Wl,--end-group
+
+%.o:            %.f90
+	$(FC) $(FFLAGS) -c $(INCS) $<
+
+%.o:            %.f
+	$(FC) $(FFLAGS) -c $(INCS) $<
+
+clean:
+	-rm -f $(OBJS)
+
+cleanall:
+	-rm -f $(OBJS) $(CMD)
